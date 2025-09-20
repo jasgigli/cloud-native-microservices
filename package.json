@@ -1,7 +1,7 @@
 {
-  "name": "acquisitions",
+  "name": "cloud-native-microservices",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cloud Native Microservices",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -10,22 +10,28 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jasgigli/acquisitions.git"
+    "url": "git+https://github.com/jasgigli/cloud-native-microservices.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/jasgigli/acquisitions/issues"
+    "url": "https://github.com/jasgigli/cloud-native-microservices/issues"
   },
-  "homepage": "https://github.com/jasgigli/acquisitions#readme",
+  "homepage": "https://github.com/jasgigli/cloud-native-microservices#readme",
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
     "dotenv": "^17.2.2",
+    "drizzle-kit": "^0.31.4",
+    "drizzle-orm": "^0.44.5",
     "express": "^5.1.0"
   },
   "devDependencies": {
